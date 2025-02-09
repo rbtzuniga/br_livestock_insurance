@@ -2,10 +2,10 @@
 
 There are two data sources:
 1. **SUSEP**: This is the agency that oversees the insurance industry in Brazil. They released an anonymized dataset containing all rural insurance contracts from 2006 to 2021.
-    - The data can be accessed [here](https://www.gov.br/susep/pt-br/central-de-conteudos/dados-estatisticos/bases-anonimizadas/bases_rural)
+    - The original raw data can be accessed [here](https://www.gov.br/susep/pt-br/central-de-conteudos/dados-estatisticos/bases-anonimizadas/bases_rural)
     - I've translated the column names, filtered to livestock insurance and merged the files into [data/SUSEP_policies.csv](data/SUSEP_policies.csv) and [data/SUSEP_claims.csv](data/SUSEP_claims.csv)
 1. **PSR** (Programa de Seguro Rural): This is a subsidy program. They publish information on all policies that received federal subsidies. The share of policies sold  that receive subsidy varies greatly by product. For livestock insurance I think roughly 30% of the policies received subsidy.
-    - The data is available [here](https://dados.agricultura.gov.br/dataset/sisser3)
+    - The original raw data is available [here](https://dados.agricultura.gov.br/dataset/sisser3)
     - I've filtered to livestock insurance and merged the files into [data/PSR.csv](data/PSR.csv)
     - An advantage of this dataset is that it is not annonimized. You can see the farmers names and lat lon coordinates (I might not have included those columns here).
 
